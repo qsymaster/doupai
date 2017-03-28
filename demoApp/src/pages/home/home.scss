@@ -1,0 +1,18 @@
+page-home {
+    .banner{
+        height:200px;
+    }
+    .search{
+        position: absolute;
+        top: 0;
+        display: block;
+        z-index: 10;
+        width: 100%;
+    }
+    .searchbar-input-container{
+        text-align: center;
+    }
+    .searchbar-input{
+        width: 200px;
+    }
+}
