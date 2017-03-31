@@ -9,13 +9,17 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+const PAGES = [
+    MyApp,
+    AboutPage,
+    ContactPage,
+    HomePage,
+    TabsPage
+];
+
 @NgModule({
     declarations: [
-        MyApp,
-        AboutPage,
-        ContactPage,
-        HomePage,
-        TabsPage
+        ...PAGES
     ],
     imports: [
         IonicModule.forRoot(MyApp,{
@@ -31,11 +35,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ],
     bootstrap: [IonicApp],
     entryComponents: [
-        MyApp,
-        AboutPage,
-        ContactPage,
-        HomePage,
-        TabsPage
+        ...PAGES
     ],
     providers: [
         StatusBar,
